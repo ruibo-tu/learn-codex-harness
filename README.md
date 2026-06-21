@@ -108,43 +108,54 @@ exactly why the loop itself is 🟢 and the **wrappers** are where the action is
 
 ---
 
-The detailed lessons live in `lessons/`. 🔴 lessons are written long; 🟢 lessons are
-deliberately short and say *"≈ Claude Code — here's only the delta."*
+## Layout
 
----
+One folder per lesson under [`lessons/`](lessons/) — mirroring `learn-claude-code`. Every
+folder has a `README.md`; the 🔴 lessons that diverge from Claude Code also ship a runnable
+`code.py` and/or a diagram in `images/`. Start at the [lessons index](lessons/README.md).
 
-## Materials
-
-Modeled on `learn-claude-code` (runnable code + layered diagrams), plus a slide deck.
-
-### 📂 `lessons/` — the written curriculum
-Five files, one per stage group; each lesson tagged 🔴/🟡/🟢.
-
-### ▶️ `examples/` — runnable demos (zero deps, offline, no API key)
-```bash
-python3 examples/01_sqeq_loop.py            # L01  the SQ/EQ spine            🟡
-python3 examples/02_apply_patch.py          # L07  patch grammar vs Edit      🔴
-python3 examples/03_sandbox_first_safety.py # L11  sandbox- vs approval-first 🔴
-python3 examples/04_code_mode.py            # L08  model writes code          🔴
-python3 examples/05_tool_registry.py        # L05  registry + parallel        🟢
 ```
-See [`examples/README.md`](examples/README.md). Pure Python 3.8+ stdlib — the "model" is a
-deterministic mock so the focus stays on the harness, not the LLM.
+lessons/
+  s00_shape_and_process_model/  README.md  images/overview.svg
+  s01_sqeq_protocol/            README.md  code.py
+  s05_tool_registry/            README.md  code.py
+  s07_apply_patch/              README.md  code.py  images/apply_patch_vs_edit.svg
+  s08_code_mode/                README.md  code.py  images/code_mode.svg
+  s11_safety_philosophy/        README.md  code.py  images/safety_decision.svg
+  s26_capstone/                 README.md  images/divergence_map.svg
+  ... (27 folders total)
+slides/codex-harness.md         a Marp deck
+Makefile                        make demo · make test · make list · make slides
+```
 
-### 🖼️ `diagrams/` — layered SVGs (gray = shared with CC, amber = divergent)
-- [`00_overview.svg`](diagrams/00_overview.svg) — one loop, many wrappers
-- [`01_safety_decision.svg`](diagrams/01_safety_decision.svg) — **sandbox-first vs approval-first** (the key one)
-- [`02_apply_patch_vs_edit.svg`](diagrams/02_apply_patch_vs_edit.svg) — patch grammar vs string replace
-- [`03_code_mode.svg`](diagrams/03_code_mode.svg) — model writes a program that calls tools
-- [`04_divergence_map.svg`](diagrams/04_divergence_map.svg) — the whole Codex-vs-CC table, visual
+### ▶️ Runnable demos (zero deps, offline, no API key)
+```bash
+make demo     # run all five code.py in order, with headers
+make test     # smoke-test that each exits 0
+make list     # print the 27-lesson curriculum
+```
+| Demo | Lesson | Tag | Shows |
+|---|---|---|---|
+| `s01_sqeq_protocol/code.py` | L01 | 🟡 | the SQ/EQ spine |
+| `s07_apply_patch/code.py` | L07 | 🔴 | patch grammar vs `Edit` |
+| `s11_safety_philosophy/code.py` | L11 | 🔴 | sandbox-first vs approval-first |
+| `s08_code_mode/code.py` | L08 | 🔴 | the model writes a program that calls tools |
+| `s05_tool_registry/code.py` | L05 | 🟢 | registry + bounded parallel dispatch |
+
+Pure Python 3.8+ stdlib — the "model" is a deterministic mock so the focus stays on the
+harness, not the LLM.
+
+### 🖼️ Diagrams (layered SVGs: gray = shared with CC, amber = divergent)
+- [overview](lessons/s00_shape_and_process_model/images/overview.svg) — one loop, many wrappers
+- [safety_decision](lessons/s11_safety_philosophy/images/safety_decision.svg) — **sandbox-first vs approval-first** (the key one)
+- [apply_patch_vs_edit](lessons/s07_apply_patch/images/apply_patch_vs_edit.svg) — patch grammar vs string replace
+- [code_mode](lessons/s08_code_mode/images/code_mode.svg) — model writes a program that calls tools
+- [divergence_map](lessons/s26_capstone/images/divergence_map.svg) — the whole Codex-vs-CC table, visual
 
 ### 📊 `slides/codex-harness.md` — a [Marp](https://marp.app) deck
-Read it as Markdown, or render to HTML/PDF/PPTX:
-```bash
-npx @marp-team/marp-cli@latest slides/codex-harness.md -o slides/codex-harness.html
-```
+Read it as Markdown, or `make slides` to render HTML (also `--pdf`/`--pptx` via marp-cli).
 
 > **Scope note.** Codex is open source (these point at real files in `codex-rs/`). Claude
 > Code is closed source, so every "vs CC" comparison is architecture-level, based on CC's
-> documented behavior and the `learn-claude-code` teaching model. The `examples/` are
+> documented behavior and the `learn-claude-code` teaching model. The `code.py` files are
 > teaching reductions, not Codex's production code.

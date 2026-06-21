@@ -80,7 +80,7 @@ So we **skim the loop** and **spend our time on the wrappers that diverge**.
 Consequence: Codex bothers you *less* for safe-but-not-allowlisted work, and
 trusts the **kernel** as the safety net instead of the **human**.
 
-`▶ examples/03_sandbox_first_safety.py` · `▶ diagrams/01_safety_decision.svg`
+`▶ lessons/s11_safety_philosophy/code.py` · `▶ lessons/s11_safety_philosophy/images/safety_decision.svg`
 
 ---
 
@@ -95,7 +95,7 @@ trusts the **kernel** as the safety net instead of the **human**.
 The edit is a **reviewable object before it touches disk** — diff UI and sandbox
 checks compose on it.
 
-`▶ examples/02_apply_patch.py` · `▶ diagrams/02_apply_patch_vs_edit.svg`
+`▶ lessons/s07_apply_patch/code.py` · `▶ lessons/s07_apply_patch/images/apply_patch_vs_edit.svg`
 
 ---
 
@@ -112,7 +112,7 @@ for p in list_dir("src/"):
 Tools are rendered as a typed API; each call becomes a **nested tool call**.
 No Claude Code equivalent (CC is pure JSON function-calling).
 
-`▶ examples/04_code_mode.py` · `▶ diagrams/03_code_mode.svg`
+`▶ lessons/s08_code_mode/code.py` · `▶ lessons/s08_code_mode/images/code_mode.svg`
 
 ---
 
@@ -147,7 +147,7 @@ These are ~the same as Claude Code — learn once, reuse:
 - MCP client + server · hooks · skills
 - subagents · session resume · `AGENTS.md` (≈ `CLAUDE.md`)
 
-`▶ examples/01_sqeq_loop.py` · `▶ examples/05_tool_registry.py`
+`▶ lessons/s01_sqeq_protocol/code.py` · `▶ lessons/s05_tool_registry/code.py`
 
 ---
 
@@ -167,7 +167,7 @@ The loop never changed. That discipline *is* harness engineering.
 
 # Go build
 
-- Lessons: `lessons/`  ·  Diagrams: `diagrams/`  ·  Runnable: `examples/`
-- All examples run offline, zero deps: `python3 examples/0X_*.py`
+- One folder per lesson under `lessons/` — each with `README.md`, and `code.py` + `images/` where they help
+- All demos run offline, zero deps: `make demo` (or `python3 lessons/s*/code.py`)
 
 *"Trust the kernel, not the prompt" + "native, not Node" explains almost everything.*
