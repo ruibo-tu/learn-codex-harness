@@ -110,3 +110,41 @@ exactly why the loop itself is 🟢 and the **wrappers** are where the action is
 
 The detailed lessons live in `lessons/`. 🔴 lessons are written long; 🟢 lessons are
 deliberately short and say *"≈ Claude Code — here's only the delta."*
+
+---
+
+## Materials
+
+Modeled on `learn-claude-code` (runnable code + layered diagrams), plus a slide deck.
+
+### 📂 `lessons/` — the written curriculum
+Five files, one per stage group; each lesson tagged 🔴/🟡/🟢.
+
+### ▶️ `examples/` — runnable demos (zero deps, offline, no API key)
+```bash
+python3 examples/01_sqeq_loop.py            # L01  the SQ/EQ spine            🟡
+python3 examples/02_apply_patch.py          # L07  patch grammar vs Edit      🔴
+python3 examples/03_sandbox_first_safety.py # L11  sandbox- vs approval-first 🔴
+python3 examples/04_code_mode.py            # L08  model writes code          🔴
+python3 examples/05_tool_registry.py        # L05  registry + parallel        🟢
+```
+See [`examples/README.md`](examples/README.md). Pure Python 3.8+ stdlib — the "model" is a
+deterministic mock so the focus stays on the harness, not the LLM.
+
+### 🖼️ `diagrams/` — layered SVGs (gray = shared with CC, amber = divergent)
+- [`00_overview.svg`](diagrams/00_overview.svg) — one loop, many wrappers
+- [`01_safety_decision.svg`](diagrams/01_safety_decision.svg) — **sandbox-first vs approval-first** (the key one)
+- [`02_apply_patch_vs_edit.svg`](diagrams/02_apply_patch_vs_edit.svg) — patch grammar vs string replace
+- [`03_code_mode.svg`](diagrams/03_code_mode.svg) — model writes a program that calls tools
+- [`04_divergence_map.svg`](diagrams/04_divergence_map.svg) — the whole Codex-vs-CC table, visual
+
+### 📊 `slides/codex-harness.md` — a [Marp](https://marp.app) deck
+Read it as Markdown, or render to HTML/PDF/PPTX:
+```bash
+npx @marp-team/marp-cli@latest slides/codex-harness.md -o slides/codex-harness.html
+```
+
+> **Scope note.** Codex is open source (these point at real files in `codex-rs/`). Claude
+> Code is closed source, so every "vs CC" comparison is architecture-level, based on CC's
+> documented behavior and the `learn-claude-code` teaching model. The `examples/` are
+> teaching reductions, not Codex's production code.
