@@ -1,4 +1,7 @@
 ## L14 — Approvals, escalation & permission profiles 🔴
+
+![L14 diagram](images/diagram.svg)
+
 **Motto: *Bundle dozens of safety knobs into a few nameable stances — and make "ask" a real return value.***
 
 **Where to look:** `protocol/src/permissions.rs`, `protocol/src/models.rs` (`PermissionProfile`, `ActivePermissionProfile`, `SandboxEnforcement`), `protocol/src/config_types.rs` (`ModeKind`, `CollaborationMode`), `collaboration-mode-templates/`, `core/src/tools/handlers/request_permissions.rs`, `tui/src/collaboration_modes.rs`.

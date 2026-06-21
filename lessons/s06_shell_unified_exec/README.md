@@ -1,4 +1,7 @@
 ## L06 — Shell & unified exec 🟡
+
+![L06 diagram](images/diagram.svg)
+
 **Motto: *Every dangerous capability funnels through one audited door.***
 
 **Where to look:** `core/src/tools/handlers/shell/`, `handlers/unified_exec/`, `core/src/exec.rs`, `exec_env.rs`, `spawn.rs`, `command_canonicalization.rs`, `exec-server/`.

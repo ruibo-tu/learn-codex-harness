@@ -1,4 +1,7 @@
 ## L25 — Realtime voice (WebRTC) & cloud-tasks 🔴
+
+![L25 diagram](images/diagram.svg)
+
 **Motto: *The queue can carry audio and reach the cloud, not just terminal text.***
 
 **Where to look:** `realtime-webrtc/` (+ `core/src/realtime_conversation.rs`, `realtime_context.rs`, `realtime_prompt.rs`), `cloud-tasks/` + `cloud-tasks-client/` + `cloud-config/`.

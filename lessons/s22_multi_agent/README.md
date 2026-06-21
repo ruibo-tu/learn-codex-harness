@@ -1,4 +1,7 @@
 ## L22 — Multi-agent orchestration & agent graph 🟡
+
+![L22 diagram](images/diagram.svg)
+
 **Motto: *A sub-agent is just another loop, reachable as a tool.***
 
 **Where to look:** `core/src/agent/` (`registry.rs`, `role.rs`, `control.rs`, `builtins/`), `handlers/multi_agents.rs` + `multi_agents_v2/` + `agent_jobs/`, `session/multi_agents.rs`, `agent-graph-store/`, `agent-identity/`.

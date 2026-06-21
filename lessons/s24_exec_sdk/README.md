@@ -1,4 +1,7 @@
 ## L24 — exec (headless/CI) & SDKs 🟢
+
+![L24 diagram](images/diagram.svg)
+
 **Motto: *Same engine, a machine on the other end of the queue.***
 
 **Where to look:** `exec/` (`lib.rs`, `event_processor_with_jsonl_output.rs`, `exec_events.rs`, `docs/exec.md`), `app-server/` + `app-server-protocol/` + `app-server-transport/`, `sdk/typescript/`, `sdk/python/` (+ `sdk/python/examples/`), `core-api/`.

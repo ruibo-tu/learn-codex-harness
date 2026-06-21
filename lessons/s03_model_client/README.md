@@ -1,4 +1,7 @@
 ## L03 — Model client: Responses API, reasoning & providers 🔴
+
+![L03 diagram](images/diagram.svg)
+
 **Motto: *The wire format you target shapes the agent you can build.***
 
 **Where to look:** `core/src/client.rs`, `client_common.rs`, `responses_retry.rs`, `stream_events_utils.rs`, `model-provider-info/`, `responses-api-proxy/`, `ollama/`, `lmstudio/`.

@@ -1,6 +1,7 @@
 # Lessons — index
 
-Per-lesson folders, mirroring `learn-claude-code`. Each folder has a `README.md`; 🔴 lessons that diverge from Claude Code also ship a runnable `code.py` and/or a diagram in `images/`.
+Per-lesson folders, mirroring `learn-claude-code`. Each folder has a `README.md` with an
+inline diagram in `images/`; five 🔴 lessons also ship a runnable `code.py`.
 
 > Legend: 🔴 divergent (focus) · 🟡 twisted · 🟢 same as Claude Code (skim).
 

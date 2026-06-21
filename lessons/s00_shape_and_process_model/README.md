@@ -1,4 +1,7 @@
 ## L00 — Shape & process model 🔴
+
+![L00 diagram](images/overview.svg)
+
 **Motto: *The language choice is an architecture choice.***
 
 **Where to look:** top `README.md`, `codex-rs/` (97-crate Rust workspace), `codex-cli/bin/codex.js` (the launcher), `sdk/`, `docs/getting-started.md`.
@@ -39,5 +42,3 @@ approval prompts. Neither is wrong — but the language is upstream of the safet
 ---
 
 ## In this folder
-
-- **`images/overview.svg`** — diagram for this lesson.

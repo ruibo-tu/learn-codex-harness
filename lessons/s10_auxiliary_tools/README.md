@@ -1,4 +1,7 @@
 ## L10 — The auxiliary tools 🟢
+
+![L10 diagram](images/diagram.svg)
+
 **Motto: *Some "tools" structure the conversation, not the world.***
 
 **Where to look:** `core/src/tools/handlers/plan.rs`, `view_image.rs`, `web_search.rs`, `request_user_input.rs`, `request_permissions.rs`, `get_context_remaining.rs`, `tool_search.rs`, `sleep.rs`.

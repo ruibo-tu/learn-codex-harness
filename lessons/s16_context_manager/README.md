@@ -1,4 +1,7 @@
 ## L16 — Context manager & history 🟢
+
+![L16 diagram](images/diagram.svg)
+
 **Motto: *The history you send is a curated view, not the raw log.***
 
 **Where to look:** `core/src/context_manager/` (`history.rs`, `normalize.rs`, `updates.rs`), `core/src/context/`, `session/token_budget.rs`, `message-history/`, `handlers/get_context_remaining.rs`.

@@ -1,4 +1,7 @@
 ## L26 — One prompt, end to end + the divergence map 🔴
+
+![L26 diagram](images/divergence_map.svg)
+
 **Motto: *Trace one request through every layer, and watch where Codex and CC part ways.***
 
 Follow a single "fix this bug" prompt and note each 🔴 fork:
@@ -46,5 +49,3 @@ one implementation decision, *"native, not Node."*
 ---
 
 ## In this folder
-
-- **`images/divergence_map.svg`** — diagram for this lesson.

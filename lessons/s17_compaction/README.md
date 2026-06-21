@@ -1,4 +1,7 @@
 ## L17 — Compaction 🟢
+
+![L17 diagram](images/diagram.svg)
+
 **Motto: *When you run out of room, summarize the past instead of dropping it.***
 
 **Where to look:** `core/src/compact.rs`, `compact_remote.rs`, `compact_remote_v2.rs`, `tasks/compact.rs`, `session/turn.rs` (`run_inline_auto_compact_task`), `protocol/src/compacted_item.rs`.

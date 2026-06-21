@@ -1,4 +1,7 @@
 ## L12 — OS sandboxes: Seatbelt / Landlock / bubblewrap 🔴
+
+![L12 diagram](images/diagram.svg)
+
 **Motto: *Trust the OS kernel, not your own validation code.***
 
 **Where to look:** `sandboxing/` — `seatbelt.rs` + `seatbelt_base_policy.sbpl`, `landlock.rs`, `manager.rs`, `policy_transforms.rs`, `restricted_read_only_platform_defaults.sbpl`; `linux-sandbox/`; `bwrap/`; `core/src/landlock.rs`.

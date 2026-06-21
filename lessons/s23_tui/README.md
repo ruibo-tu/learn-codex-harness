@@ -1,4 +1,7 @@
 ## L23 — The TUI 🟡
+
+![L23 diagram](images/diagram.svg)
+
 **Motto: *The UI is a stateful reader of the event stream.***
 
 **Where to look:** `tui/` — `app.rs`, `chatwidget.rs`, `bottom_pane/`, `diff_render.rs`, `app_event.rs`, `app_backtrack.rs`, `approval_events.rs`.

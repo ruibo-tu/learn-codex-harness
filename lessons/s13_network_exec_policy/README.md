@@ -1,4 +1,7 @@
 ## L13 — Network & exec policy, Windows, proxy 🔴
+
+![L13 diagram](images/diagram.svg)
+
 **Motto: *Filesystem, network, and the set of allowed programs are three separate locks.***
 
 **Where to look:** `sandboxing/seatbelt_network_policy.sbpl`, `network-proxy/` + `core/src/network_policy_decision.rs` + `network_proxy_loader.rs`, `execpolicy/` + `execpolicy-legacy/` + `core/src/exec_policy.rs`, `windows-sandbox-rs/` + `core/src/windows_sandbox.rs`, `process-hardening/`.

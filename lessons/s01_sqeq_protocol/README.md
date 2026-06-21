@@ -1,4 +1,7 @@
 ## L01 — SQ/EQ protocol & app-server 🟡
+
+![L01 diagram](images/diagram.svg)
+
 **Motto: *An agent is a function from a Submission Queue to an Event Queue.***
 
 **Where to look:** `protocol/src/protocol.rs` (its doc comment names the *"SQ (Submission

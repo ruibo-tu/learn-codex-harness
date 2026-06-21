@@ -1,4 +1,7 @@
 ## L11 — Safety philosophy: sandbox-first vs approval-first 🔴
+
+![L11 diagram](images/safety_decision.svg)
+
 **Motto: *Decide allow / sandbox / ask — and pick which one is your default.***
 
 **Where to look:** `core/src/safety.rs` (+ `safety_tests.rs`), `core/src/tools/sandboxing.rs`, `core/src/shell.rs`, `shell-escalation/`, `protocol/src/config_types.rs` (`SandboxMode`: `ReadOnly`, `DangerFullAccess`, …), `docs/sandbox.md` → OpenAI security docs.
@@ -36,4 +39,3 @@ answers. Everything else in this stage is Codex executing on "the kernel."
   ```bash
   python3 lessons/s11_safety_philosophy/code.py
   ```
-- **`images/safety_decision.svg`** — diagram for this lesson.

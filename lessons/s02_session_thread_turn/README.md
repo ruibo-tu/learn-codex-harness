@@ -1,4 +1,7 @@
 ## L02 — Session · Thread · Turn · TurnContext 🟢
+
+![L02 diagram](images/diagram.svg)
+
 **Motto: *Separate what persists (thread) from what's happening now (turn).***
 
 **Where to look:** `core/src/session/session.rs`, `session/turn.rs`, `session/turn_context.rs`, `codex_thread.rs`, `thread_manager.rs`.

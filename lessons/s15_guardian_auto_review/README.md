@@ -1,4 +1,7 @@
 ## L15 — Guardian / auto-review: AI-reviewed approvals 🔴
+
+![L15 diagram](images/diagram.svg)
+
 **Motto: *When a human can't be in the loop, put a risk-assessing agent there.***
 
 **Where to look:** `core/src/guardian/`, `protocol/src/config_types.rs` (`ApprovalsReviewer`: `user` / `auto_review`, legacy `guardian_subagent`), `core/src/tools/network_approval.rs`, `auto_review_denials.rs` (in `tui/`).

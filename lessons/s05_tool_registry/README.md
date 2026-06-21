@@ -1,4 +1,7 @@
 ## L05 — The tool registry & router 🟢
+
+![L05 diagram](images/diagram.svg)
+
 **Motto: *Tools are data; dispatch is a table lookup.***
 
 **Where to look:** `core/src/tools/registry.rs`, `router.rs`, `mod.rs`, `handlers/mod.rs`, `tools/` crate (`ToolName`).

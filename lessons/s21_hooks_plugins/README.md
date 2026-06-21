@@ -1,4 +1,7 @@
 ## L21 — Hooks & plugins 🟡
+
+![L21 diagram](images/diagram.svg)
+
 **Motto: *Give users injection points at the lifecycle seams.***
 
 **Where to look:** `hooks/` + `core/src/hook_runtime.rs` + `tools/hook_names.rs`, `core-plugins/` + `plugin/` + `core/src/plugins/`, `handlers/request_plugin_install.rs`.

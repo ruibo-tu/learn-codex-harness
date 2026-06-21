@@ -1,4 +1,7 @@
 ## L04 — Prompt assembly & base instructions 🟢
+
+![L04 diagram](images/diagram.svg)
+
 **Motto: *The system prompt is computed, not written.***
 
 **Where to look:** `client_common.rs` (the `Prompt` type), `core/prompts/`, `core/src/agents_md.rs`, `session/turn.rs` (the `build_*_injections` calls).

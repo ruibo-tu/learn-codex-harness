@@ -1,4 +1,7 @@
 ## L08 — Code mode: calling tools by writing code 🔴
+
+![L08 diagram](images/code_mode.svg)
+
 **Motto: *Sometimes the best tool call is a program that makes many tool calls.***
 
 **Where to look:** `code-mode/` (`service.rs`, `runtime/`, `cell_actor/`), `code-mode-protocol/` (`render_json_schema_to_typescript`, `build_exec_tool_description`, `CodeModeNestedToolCall`, `ExecuteRequest`/`WaitRequest`), `code-mode-host/`.
@@ -29,4 +32,3 @@ can sandbox.
   ```bash
   python3 lessons/s08_code_mode/code.py
   ```
-- **`images/code_mode.svg`** — diagram for this lesson.

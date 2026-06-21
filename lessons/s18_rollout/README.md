@@ -1,4 +1,7 @@
 ## L18 — Rollout & replayable sessions 🟡
+
+![L18 diagram](images/diagram.svg)
+
 **Motto: *Append every event to disk so any session can be replayed or resumed.***
 
 **Where to look:** `rollout/`, `rollout-trace/`, `core/src/rollout.rs`, `session/rollout_reconstruction.rs`, `thread-store/`, `core/src/rollout_budget.rs`.

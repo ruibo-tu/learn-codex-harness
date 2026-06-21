@@ -1,4 +1,7 @@
 ## L20 — MCP: client & server 🟢
+
+![L20 diagram](images/diagram.svg)
+
 **Motto: *Speak one open protocol and inherit an ecosystem of tools.***
 
 **Where to look:** `rmcp-client/`, `mcp-server/`, `mcp/`, `core/src/mcp.rs`, `mcp_tool_call.rs`, `mcp_tool_exposure.rs`, `session/mcp.rs`.

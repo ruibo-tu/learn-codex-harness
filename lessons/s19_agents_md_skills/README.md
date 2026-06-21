@@ -1,4 +1,7 @@
 ## L19 — AGENTS.md, skills & memories 🟢
+
+![L19 diagram](images/diagram.svg)
+
 **Motto: *Persist instructions, not just facts — and match the store to the lifetime.***
 
 **Where to look:** `core/src/agents_md.rs` (+ `docs/agents_md.md`), the repo's own `AGENTS.md`, `core-skills/` + `core/src/skills.rs` (+ `docs/skills.md`), `memories/` + `protocol/src/memory_citation.rs`.

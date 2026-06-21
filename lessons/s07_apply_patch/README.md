@@ -1,4 +1,7 @@
 ## L07 — apply_patch vs Edit/Write 🔴
+
+![L07 diagram](images/apply_patch_vs_edit.svg)
+
 **Motto: *Edit files through a patch grammar, not string surgery.***
 
 **Where to look:** `apply-patch/` crate (`parser.rs`, `streaming_parser.rs`, `seek_sequence.rs`), `core/src/apply_patch.rs`, `core/src/tools/handlers/apply_patch.rs`, `handlers/apply_patch.lark` (the grammar).
@@ -33,4 +36,3 @@ failure modes, and how safety inspects changes.
   ```bash
   python3 lessons/s07_apply_patch/code.py
   ```
-- **`images/apply_patch_vs_edit.svg`** — diagram for this lesson.

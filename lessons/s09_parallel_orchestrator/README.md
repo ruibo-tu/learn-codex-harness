@@ -1,4 +1,7 @@
 ## L09 — Parallel tool calls & the orchestrator 🟢
+
+![L09 diagram](images/diagram.svg)
+
 **Motto: *Run independent work concurrently; serialize what touches shared state.***
 
 **Where to look:** `core/src/tools/orchestrator.rs`, `parallel.rs`, `lifecycle.rs`, `context.rs` (shared `TurnDiffTracker`).
