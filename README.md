@@ -49,8 +49,17 @@ implementation language.
 | Project instructions | `AGENTS.md` | `CLAUDE.md` | 🟢 |
 | MCP, hooks, skills, compaction, plan/todo, subagents, multi-surface | present, ~same idea | present, ~same idea | 🟢 |
 
+The same map, visually:
+
+![Codex vs Claude Code — the whole divergence map](lessons/s26_capstone/images/divergence_map.svg)
+
+**Want the reverse view** — what *Claude Code* has that *Codex* doesn't? See
+[docs/claude-code-not-in-codex.md](docs/claude-code-not-in-codex.md).
+
 Pin this mental model the whole way through — it's identical in *both* systems, which is
 exactly why the loop itself is 🟢 and the **wrappers** are where the action is:
+
+![One loop, many wrappers](lessons/s00_shape_and_process_model/images/overview.svg)
 
 ```
    user input ──▶ Submission Queue (SQ) ──▶ [ THE LOOP ] ──▶ Event Queue (EQ) ──▶ surface
@@ -125,6 +134,7 @@ lessons/
   s26_capstone/                 README.md  images/divergence_map.svg
   ... (27 folders total)
 slides/codex-harness.md         a Marp deck
+docs/claude-code-not-in-codex.md  the reverse view: what CC has that Codex doesn't
 Makefile                        make demo · make test · make list · make slides
 ```
 
