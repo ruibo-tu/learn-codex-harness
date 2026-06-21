@@ -70,6 +70,20 @@ exactly why the loop itself is 🟢 and the **wrappers** are where the action is
 
 ---
 
+## Codex architecture at a glance
+
+Standalone view of Codex itself — the real crates and how a request flows through them
+(independent of the Claude Code comparison; amber marks the parts that diverge most):
+
+![Codex architecture overview](docs/images/codex-architecture.svg)
+
+Read it top-to-bottom: **surfaces** write the Submission Queue and read the Event Queue →
+**`codex-core`** runs the loop, calls the **model**, dispatches **tools** → everything that
+touches the OS first passes the **safety/sandbox** band → **context/rollout** persist it.
+The whole curriculum below just walks this picture one box at a time.
+
+---
+
 ## Curriculum (topics + order, with divergence tags)
 
 ### Stage 0 — Orientation
